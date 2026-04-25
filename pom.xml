@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.haas</groupId>
-    <artifactId>TF_US_OP2_2a</artifactId>
+    <artifactId>TF_US_OP2b</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
