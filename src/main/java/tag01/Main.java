@@ -15,7 +15,7 @@ public class Main {
     // Dynamische Polymorphie verstehen.
     // Bei der dynamischen Polymorphie geht es um Methodenueberladung:
     Tier einTier = new Katze();
-    // Katze eineKatze = new Tier();
+    // Katze eineKatze = new Tier(); - funktioniert nicht
 
     //
     einTier.laufen(); // Es wird die richtige Ueberladung gefunden (es wird die ueberschriebene laufen von Katze
