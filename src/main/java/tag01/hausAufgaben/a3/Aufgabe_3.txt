@@ -1,0 +1,26 @@
+/* Level 2
+Sie betreiben einen imbiss und möchten eine Verwaltungssoftware für die verkauften Waren erstellen.
+ * Die Verkaufsware unterteilt sich in Speisen und Getränke. Alle Waren werden in der Basisklasse,
+   von der kein Objekt erstellt werden darf, in einer Liste gespeichert.
+ * Für alle Waren erfassen Sie die Bezeichnung und den Preis. Speisen bestehen zudem aus einer Auflistung
+   der Zutaten, zu Getränken speichern Sie die Füllmenge in Milliliter.
+ * Alle benötigten Daten werden über Konstruktoren erfasst.
+ * Um alle Waren bequem ausgeben zu können, überschreiben Sie die toString-Methode der Klassen.
+   Dabei vermeiden Sie doppelten Code und beachten die Abkapselung und Trennung von Darstellung und Programmlogik.
+ * Zum Testen erstellen Sie ein Getränk, eine Speise und geben alle Informationen auf dem Bildschirm aus.
+ *
+ * Erstellen Sie dazu ein UML Klassendiagramm.
+
+
+ Вы владеете закусочной и хотите создать программу для учета продаваемых товаров.
+  * Продаваемые товары делятся на блюда и напитки. Все товары хранятся в базовом классе,
+    из которого нельзя создавать объекты, в виде списка.
+  * Для всех товаров вы регистрируете название и цену. Блюда, кроме того, состоят из перечня
+    ингредиентов, для напитков вы сохраняете объем в миллилитрах.
+  * Все необходимые данные регистрируются через конструкторы.
+  * Чтобы удобно выводить все товары, переопределите метод toString классов.
+    При этом избегайте дублирования кода и соблюдайте принципы инкапсуляции и разделения представления и программной логики.
+  * Для тестирования создайте напиток, блюдо и выведите всю информацию на экран.
+  *
+  * Составьте для этого диаграмму классов UML.
+ */

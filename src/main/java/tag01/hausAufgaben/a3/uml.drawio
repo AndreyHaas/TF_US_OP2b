@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="drawio" version="21.0.0" type="device">
+  <diagram name="Klassendiagramm" id="klassendiagramm">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Ware Klasse -->
+        <mxCell id="ware" value="&lt;b&gt;Ware&lt;/b&gt;" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="200" y="100" width="220" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="ware_attr1" value="- bezeichnung: String" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=4;" vertex="1" parent="ware">
+          <mxGeometry y="30" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="ware_attr2" value="- preis: double" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=4;" vertex="1" parent="ware">
+          <mxGeometry y="56" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="ware_attr3" value="- warenListe: List&amp;lt;Ware&amp;gt;" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=4;" vertex="1" parent="ware">
+          <mxGeometry y="82" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="ware_sep" value="" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="ware">
+          <mxGeometry y="108" width="220" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="ware_meth1" value="+ Ware(bezeichnung: String, preis: double)" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=4;" vertex="1" parent="ware">
+          <mxGeometry y="116" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="ware_meth2" value="+ getBezeichnung(): String" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=4;" vertex="1" parent="ware">
+          <mxGeometry y="142" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="ware_meth3" value="+ getPreis(): double" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=4;" vertex="1" parent="ware">
+          <mxGeometry y="168" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="ware_meth4" value="+ toString(): String" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;spacingLeft=4;" vertex="1" parent="ware">
+          <mxGeometry y="194" width="220" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Speise Klasse -->
+        <mxCell id="speise" value="&lt;b&gt;Speise&lt;/b&gt;" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="380" width="220" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="speise_attr1" value="- zutaten: List&amp;lt;String&amp;gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=4;" vertex="1" parent="speise">
+          <mxGeometry y="30" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="speise_sep" value="" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="speise">
+          <mxGeometry y="56" width="220" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="speise_meth1" value="+ Speise(bezeichnung: String, preis: double, zutaten: List&amp;lt;String&amp;gt;)" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=4;" vertex="1" parent="speise">
+          <mxGeometry y="64" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="speise_meth2" value="+ getZutaten(): List&amp;lt;String&amp;gt;" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=4;" vertex="1" parent="speise">
+          <mxGeometry y="90" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="speise_meth3" value="+ toString(): String" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=4;" vertex="1" parent="speise">
+          <mxGeometry y="116" width="220" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Getraenk Klasse -->
+        <mxCell id="getraenk" value="&lt;b&gt;Getraenk&lt;/b&gt;" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="550" y="380" width="220" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="getraenk_attr1" value="- fuellmenge: int" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=4;" vertex="1" parent="getraenk">
+          <mxGeometry y="30" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="getraenk_sep" value="" style="line;strokeWidth=1;fillColor=none;" vertex="1" parent="getraenk">
+          <mxGeometry y="56" width="220" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="getraenk_meth1" value="+ Getraenk(bezeichnung: String, preis: double, fuellmenge: int)" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=4;" vertex="1" parent="getraenk">
+          <mxGeometry y="64" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="getraenk_meth2" value="+ getFuellmenge(): int" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=4;" vertex="1" parent="getraenk">
+          <mxGeometry y="90" width="220" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="getraenk_meth3" value="+ toString(): String" style="text;strokeColor=#82b366;fillColor=#d5e8d4;align=left;spacingLeft=4;" vertex="1" parent="getraenk">
+          <mxGeometry y="116" width="220" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Pfeil: Ware -> Speise (Vererbung) -->
+        <mxCell id="arrow_ware_speise" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=12;startArrow=none;startFill=0;" edge="1" parent="1" source="ware" target="speise">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="300" as="sourcePoint"/>
+            <mxPoint x="310" y="380" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Pfeil: Ware -> Getraenk (Vererbung) -->
+        <mxCell id="arrow_ware_getraenk" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=12;startArrow=none;startFill=0;" edge="1" parent="1" source="ware" target="getraenk">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="300" as="sourcePoint"/>
+            <mxPoint x="660" y="380" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
