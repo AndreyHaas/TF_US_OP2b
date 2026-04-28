@@ -1,0 +1,33 @@
+1) Was versteht man unter einem “Regressionstest” in der Softwareentwicklung?
+
+    a) Ein Test, der die Leistung der Software misst
+    b) Ein Test, der sicherstellt, dass neue Änderungen keine alten Funktionen beeinträchtigen
+    c) Ein Test, der die Benutzerfreundlichkeit bewertet
+    d) Ein Test, der die Software auf verschiedenen Geräten testet
+
+----------------------------------------------------------------------------------
+
+2) Welcher Testtyp wird durchgeführt, um die Benutzeroberfläche einer Anwendung zu überprüfen?
+
+    a) Lasttest
+    b) Usability-Test
+    c) Sicherheitstest
+    d) Integrationstest
+
+----------------------------------------------------------------------------------
+
+3) Was beschreibt der Begriff “Testabdeckung” am besten?
+
+    a) Die Anzahl der durchgeführten Tests
+    b) Der Prozentsatz des Codes, der durch Tests überprüft wird
+    c) Die Dauer der Testdurchführung
+    d) Die Anzahl der Tester im Team
+
+----------------------------------------------------------------------------------
+
+4) Welcher der folgenden ist KEIN Teststufentyp?
+
+    a) Komponententest
+    b) Systemtest
+    c) Alphatest
+    d) Akzeptanztest

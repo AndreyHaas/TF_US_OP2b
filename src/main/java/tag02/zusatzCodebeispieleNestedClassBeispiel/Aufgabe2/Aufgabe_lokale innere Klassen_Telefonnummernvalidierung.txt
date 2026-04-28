@@ -1,0 +1,88 @@
+Hintergrund: 
+Java kennt vier Arten von inneren Klassen.
+In dieser Aufgabe sollen Sie eine lokale innere Klasse in einer Methode der äußeren Klasse definieren.
+Das hier genutzte Prinzip verdeutlicht, wie anonyme innere Klassen später auch funktionieren werden.
+Wir erschaffen uns "on the fly" eine innere Klasse und verwenden diese dann ausschließlich im Scope der umgegebenden
+Methode oder des umgegebenden Konstruktors.
+
+1a)Implementieren Sie eine Klasse namens TelefonSystem.
+
+Die Klasse TelefonSystem hat folgende Member:
+Attribute:
+Keine 
+
+CTOR:
+Es reicht der Standardkonstruktor
+
+Methoden:
+- eine validiereTelefonnummer Methode, die in ihrer Parameterliste eine Variable telefonnummer vom Typ String entgegennimmt
+und void zurückgibt.
+
+Die Methode validiereTelefonnummer(String telefonnummer)der äußeren TelefonSystemklasse definiert nun im Methodenrumfp ein innere
+Klasse:
+-eine innere Klasse namens Telefonnummer mit folgenden Attributen:
+
+Attribute (alle geschützt):
+-formatierteTelefonnummer vom Typ String(diese Variable soll 
+fest auf null initialisiert werden.)
+
+CTOR:
+-Der Telefonnummer-Konstruktor empfängt in seiner Parameterliste 
+ein Argument vom Typ String namens telefonnummer und
+initialisiert damit eine lokale Variable namens aktuelleNummer vom Typ String. 
+(Diese lokale Variable soll nur innerhalb des Konstruktorrumpfes sichtbar sein.)
+
+-Der Konstruktor sorgt auch für die Validierung der Telefonnummer: 
+die aktuelleNummer muss genau 10 Zeichen lang sein (Vergleich mit der Variablen nummernLaenge). 
+Ist die aktuelleNummer 10 Zeichen lang dann wird der lokalen Variable 
+formatierteTelefonnummer der Wert von aktuelleNummer zugewiesen.
+Ist die aktuelleNummer ungleich Länge 10, dann hat die formatierteTelefonnummer weiterhin den Wert null.
+
+Methoden:
+- eine getTelefonnummer Methode, welche den Wert von formatierteTelefonnummer zurückgibt.
+- eine gibOriginaleTelefonnummerAus ohne Parameter, welche an der Konsole den Wert der 
+original übergebenen telefonnummer(nicht die formatierteTelefonnummer) ausgibt.
+- lassen Sie an der Konsole ausgeben, ob die originale Telefonnummer gültig war (Erfolgsmeldung). Wenn 
+sie nicht gültig war (Länge != 10, d.h. formatierteTelefonnummer ist null) dann lassen Sie eine Fehlermeldung ausgeben. 
+
+1b) In der main-Methode initialisieren Sie die Klasse TelefonSystem und rufen auf die Referenz die Methode validiereTelefonnummer(String telefonnummer)
+auf und testen deren Funktionalität, indem Sie eine ungültige Telefonnummer übergeben und anschließend eine gültige Telefonnummer
+übergeben.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Methoden:
+-freiwillig eine getMethode um den Herzschlag auszulesen. Rückgabetyp: float 
+Hinweis: ein getter ist nicht wirklich nötig, da eine äußere Klasse Zugriff auf alle ihre Member
+und damit auch auf alle Member der inneren Klasse hat. Das geschützte Attribut herzfrequenz 
+der inneren Klasse Herz kann daher direkt von der äußeren Klasse ausgelesen werden.
+
+1b) 
+Implementieren Sie die beiden Konstruktoren für Körper und Herz so, dass eine enge Komposition(stärkster Spezialfall einer Assoziation) 
+zwischen beiden Klassen entsteht:
+
+-Ein Herzobjekt darf niemals unabhängig eines Körperobjekts existieren. 
+-Wird ein Körperobjekt erschaffen, wird automatisch ein Herzobjekt erschaffen.
+-Wird das Körperobjekt zerstört, darf es auch kein Herz mehr geben. 
+
+
+1c)
+In der main() Methode instanzieren Sie die Körperklasse. Rufen sie die zeigeHerzfrequenzAn()-Methode über die Körperreferenz auf.
+Prüfen Sie, ob eine Komposition besteht.

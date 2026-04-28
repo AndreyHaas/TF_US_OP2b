@@ -1,0 +1,58 @@
+Hintergrund: 
+Java kennt vier Arten von inneren Klassen.
+Diese Aufgabe zu einer "Builder" Entwurfsmustervariante benutzt statische innere Klassen.
+Der Einsatzzweck statischer innerer Klassen ist sehr begrenzt.
+Eine interessante Idee diese Art Klassen zu nutzen
+hat Joshua Bloch in seinem Buch "Effective Java" aber dargestellt.
+Er nutzt diese um eine Variante des klassischen Builder Entwurfsmuster
+umzusetzen. 
+
+
+1a) 
+Erstellen Sie eine Klasse Computer.
+Die Computerklasse hat folgende Member: 
+
+Attribute (alle geschützt):
+-SSD vom Typ String
+-RAM vom Typ String
+
+CTOR:
+-Einen privaten Konstruktor, welcher nur ein einziges Argument vom Typ der inneren statischen Klasse ComputerBuilder entgegennimmt. Im Körper 
+werden alle Attribute initialisiert über die Attribute des Builderobjekts.
+
+Beispiel:
+private Computer(Builder builder) \\ Hinweis: in Java ist es moeglich statische Klassen zu initialisieren.
+{
+	this.SSD = builder.SSD;
+
+	// etc...
+}
+
+Methoden:
+-eine öffentliche Methode um den Computer auszuschalten. Die Methode gibt void zurück und gibt z.B. aus: "Fahre den Computer herunter..."
+
+
+Die äußerer Computerklasse hat auch zusätzlich noch eine innere Klasse als Member:
+
+-eine öffentliche, innere statische Klasse namens ComputerBuilder.
+
+Die ComputerBuilder-Klasse wiederrum hat folgende Member:
+
+Attribute (alle geschützt):
+-SSD vom Typ String
+-RAM vom Typ String
+
+CTORs:
+-Einen öffentlichen Konstruktor, der als Argumente ssd vom Typ String und ram vom Typ String entgegennimmt und seine Attribute
+damit initialisiert.
+
+Methoden:
+-eine baue() Methode die eine Instanz der äußeren Computerklasse zurückgibt.
+
+
+1b) Versuchen Sie im main ein Objekt der Klasse Computer zu erstellen und rufen sie dessen ausschalten() Methode auf.
+Wenn sie das geschafft haben: Gratulation! Sie haben soeben das Builder Pattern nach Joshua Bloch umgesetzt. :)
+
+1c) Versuchen Sie die Instanziierung der Computerklasse mit eigenen Worten zu beschreiben.
+
+1d) Wenn Sie noch Zeit finden erstellen Sie ein UML Klassendiagramm. (Problem, wie stellen Sie eine innere Klasse in einem Klassendiagramm dar?)

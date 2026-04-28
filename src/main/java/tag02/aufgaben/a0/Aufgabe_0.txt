@@ -1,0 +1,8 @@
+/* Aufgabe 0 (Basics)
+ * Erstellen Sie die abstrakte Klasse "Künstler" mit einer abstrakten Methode "kunstErstellen()".
+ *
+ * In der main-Methode erzeugen Sie zwei Objekte vom Typ Künstler, wobei Sie mit Hilfe anonymer Klassen
+ * die kunstErstellen()-Methode überschreiben.
+ * Ein Maler soll auf der Konsole "Ich male ein Bild" und ein Sänger soll "Ich singe einen Song" ausgeben.
+ * Rufen Sie in der main-Methode für beide Objekte die Methode auf.
+ */
