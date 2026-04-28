@@ -1,4 +1,4 @@
-package aufgaben;
+package tag02.aufgaben.loesungen;
 /* Schreiben Sie eine Klasse 'Calculator', die eine Methode 'calculate' enthält, mit zwei Zahlen und einem Objekt vom Typ 'Operation' als Parameter und das Ergebnis der Operation als Rückgabe.
  Erstellen Sie das Interface 'Operation' mit der Methode 'execute(int a, int b)'.
  Verwenden Sie anonyme Klassen, um für jede Operation ein Objekt zu erstellen und es der `calculate`-Methode zu übergeben.

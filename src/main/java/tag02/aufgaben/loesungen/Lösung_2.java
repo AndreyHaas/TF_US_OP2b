@@ -15,7 +15,7 @@
  * Übergeben Sie den ersten Kunden, dann das Objekt der anonymen Klasse und dann den zweiten Kunden an die drucken()-Methode.
  */
 
-package aufgaben;
+package tag02.aufgaben.loesungen;
 
 public class Lösung_2
 {

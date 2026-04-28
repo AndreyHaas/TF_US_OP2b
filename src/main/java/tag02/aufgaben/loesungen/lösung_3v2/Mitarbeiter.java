@@ -1,4 +1,4 @@
-package aufgaben.lösung_3v2;
+package tag02.aufgaben.loesungen.lösung_3v2;
 
 import java.util.ArrayList;
 import java.util.List;

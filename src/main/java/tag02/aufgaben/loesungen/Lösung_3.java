@@ -16,7 +16,7 @@
  * Anschließend fragen Sie über die Konsole eine Nummer als String ab. Es wird der Name des Mitarbeiters mithilfe der fromString-Methode ausgegeben.
  */
 
-package aufgaben;
+package tag02.aufgaben.loesungen;
 
 
 import java.util.ArrayList;

@@ -6,7 +6,7 @@
  * Rufen Sie in der Main für beide Objekte die Methode auf.
  */
 
-package aufgaben;
+package tag02.aufgaben.loesungen;
 
 public class Lösung_0
 {

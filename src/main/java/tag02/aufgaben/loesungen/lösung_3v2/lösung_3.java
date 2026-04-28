@@ -1,4 +1,4 @@
-package aufgaben.lösung_3v2;
+package tag02.aufgaben.loesungen.lösung_3v2;
 /* Sie bereiten Ihre Model-Klassen zur Verwendung in einer GUI vor. Um die Daten in den GUI Elementen darstellen zu können, brauchen Sie eine Möglichkeit,
  * die Objekte in Strings und aus Strings zurück in die Objekte konvertieren zu können. Die GUI Elemente sind bereits darauf eingestellt, einen String-Konverter zu verwenden.
  * Der String-Konverter ist eine abstrakte, generische Klasse mit dem Namen 'StringConverter'. Verwenden Sie folgende Syntax:
