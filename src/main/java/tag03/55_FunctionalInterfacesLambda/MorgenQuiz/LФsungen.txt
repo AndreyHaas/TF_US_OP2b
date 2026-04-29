@@ -1,0 +1,40 @@
+1) Welche Aussage für Anonyme Klassen trifft zu
+	
+    c) Es müssen alle abstrakten Methoden implementiert werden.
+
+----------------------------------------------------------------------------------
+2) Welche Aussage für Anonyme Klassen trifft zu?
+ 
+    a) Anonyme Klassen haben keinen Namen und auch keine (selbsterstellten) Konstruktoren.
+
+----------------------------------------------------------------------------------
+3) Können Referenzen auf Objekte anonymer Klassen verweisen/zeigen?
+
+    a) Ja
+
+----------------------------------------------------------------------------------
+4) Was wird ausgegeben, wenn die main-Methode ausgeführt wird?
+
+class Flieger {
+    void fliegen() {
+        System.out.println("Hubschraubergeräusche");
+    }
+}
+
+public class Flughafen
+{
+    public static void main(String[] args) {
+        Flieger flugzeug = new Flieger() {
+            void fliegen() {
+                System.out.println("Düsenjetgeräusche");
+            }
+        };
+
+        flugzeug.fliegen();
+    }
+}
+
+    b) "Düsenjetgeräusche"
+
+
+

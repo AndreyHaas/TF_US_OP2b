@@ -1,0 +1,16 @@
+/*  Aufgabe 1-1
+ *
+ *  - Erstellen Sie das funktionale Interface "Ausgabe" mit der void "ausgeben(String[] daten)"-Methode.
+ *  - Erstellen Sie in der Main-Klasse die drei void Methoden bildschirm, datei und datenbank mit String[]-Parameter
+    passend zum Interface.
+
+ *  - Die drei Methoden sollen jeden String im Array testweise auf der Konsole ausgeben wobei
+ *      die Methoden zur Unterscheidung auch das Ziel der Ausgabe mit ausgeben sollen
+ *      z.B. System.out.printf("Schreibe %s in die Datenbank...%n", d);
+ *  - Testen Sie die Methoden und das Interface im Main, indem Sie dort ein String Array anlegen,
+ *      einer Variable vom Typ des Interfaces die Methoden zuweisen (als Array z.B.) und aufrufen.
+ *
+ *  Aufgabe 1-2
+ *  Modifizieren Sie das Programm so, dass anstelle des eigenen Interfaces "Ausgabe", das in Java bereits vorhandene
+    Interface "Consumer" verwendet wird.
+ */
