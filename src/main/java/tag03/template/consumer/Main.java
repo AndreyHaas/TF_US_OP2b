@@ -1,4 +1,4 @@
-package template.consumer;
+package tag03.template.consumer;
 
 import java.util.function.BiConsumer;
 import java.util.function.IntConsumer;

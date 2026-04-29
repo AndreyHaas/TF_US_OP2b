@@ -1,4 +1,4 @@
-package template;
+package tag03.template;
 
 // Die Annotation '@FunctionalInterface' ist nicht zwingend erforderlich, aber best practice, um das versehentliche Hinzufügen weiterer abstrakter Methoden zu verhindern.
 @FunctionalInterface

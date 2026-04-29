@@ -1,4 +1,4 @@
-package template.function.bsp1;
+package tag03.template.function.bsp1;
 
 // Auflistung Functional Interfaces aus dem Package java.util.function
 // https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html

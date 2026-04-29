@@ -1,4 +1,4 @@
-package template.function.bsp2;
+package tag03.template.function.bsp2;
 
 import java.util.function.Function;
 

@@ -1,4 +1,4 @@
-package template;
+package tag03.template;
 
 @FunctionalInterface
 public interface Berechnend
