@@ -1,31 +1,43 @@
 package tag03.aufgaben.a1;
 
+import java.lang.StackWalker.StackFrame;
+
 public class Main {
     public static void bildschirm(String... daten) {
-        System.out.println("=== Ausgabe auf Bildschirm ===" + System.lineSeparator());
 
         for (String d : daten) {
-            System.out.printf("Schreibe %s auf den Bildschirm...%n", d);
+            System.out.printf("Schreibe %s auf den " + getMethod() + "...%n", d);
         }
         System.out.println();
     }
 
     public static void datei(String... daten) {
-        System.out.println("=== Ausgabe in Datei ===" + System.lineSeparator());
 
         for (String d : daten) {
-            System.out.printf("Schreibe %s in die Datei...%n", d);
+            System.out.printf("Schreibe %s in die " + getMethod() + "...%n", d);
         }
         System.out.println();
     }
 
     public static void datenbank(String... daten) {
-        System.out.println("=== Ausgabe in Datenbank ===" + System.lineSeparator());
 
         for (String d : daten) {
-            System.out.printf("Schreibe %s in die Datenbank...%n", d);
+            System.out.printf("Schreibe %s in die " + getMethod() + "...%n", d);
         }
         System.out.println();
+    }
+
+    private static String getMethod() {
+        String methodName = StackWalker.getInstance()
+            .walk(frames -> frames.skip(1).findFirst()
+                .map(StackFrame::getMethodName)
+                .orElse("unknown"));
+
+        if (methodName == null || methodName.isEmpty()) {
+            return methodName;
+        }
+
+        return Character.toUpperCase(methodName.charAt(0)) + methodName.substring(1);
     }
 
     static void main() {
