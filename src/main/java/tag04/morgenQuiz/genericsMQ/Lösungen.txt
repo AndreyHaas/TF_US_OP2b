@@ -1,0 +1,25 @@
+1. Welcher der folgenden Typen kann nicht als Typargument in Generics verwendet
+werden?
+
+    c) void
+
+----------------------------------------------------------------------------------
+2. Welche der folgenden Aussagen ist wahr für Java Generics?
+
+    c) Generics bieten zur Kompilierzeit Typsicherheit
+
+----------------------------------------------------------------------------------
+3. Was passiert, wenn man versucht, ein Integer-Objekt zu einem generischen Container
+hinzuzufügen, der String-Objekte speichert?
+
+    b) Der Compiler erzeugt einen Fehler
+
+----------------------------------------------------------------------------------
+4. Welche der folgenden Methodensignaturen ist korrekt?
+
+    a) public static <E> void printArray(E[] inputArray) {...}
+
+----------------------------------------------------------------------------------
+5. Welche der folgenden Aussagen ist wahr für die Verwendung von Generics in Java?
+
+    b) Generics können sowohl mit Klassen als auch mit Interfaces verwendet werden

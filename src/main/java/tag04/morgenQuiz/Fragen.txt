@@ -1,0 +1,44 @@
+1) Welche Aussage zu functional Interfaces ist richtig?
+
+	a) Ein Interface ist nur dann ein functional Interface, wenn auch die Annotation @FunctionalInterface
+  	bei der Interface-Deklaration angegeben wird.
+
+	b) Ein functional Interface muss genau eine abstrakte Methode deklarieren, aber keine statischen Methoden.
+
+	c) Ein functional Interface muss genau eine abstrakte Methode, kann aber beliebig viele default Methoden deklarieren.
+
+	d) Ein functional Interface kann zusätzlich zu abstrakten Methoden auch mehrere Attribute deklarieren.
+
+----------------------------------------------------------------------------------
+2) Ist diese Aussage korrekt?
+
+	- Functional Interfaces lassen sich, im Gegensatz zu herkömmlichen Interfaces, instanziieren.
+
+----------------------------------------------------------------------------------
+3) Functional Interfaces werden auch mit diesem Namen bezeichnet:
+
+	a) SARA Interfaces
+	b) SAM Interfaces
+	c) UTE Interfaces
+	d) TIM Interfaces
+
+----------------------------------------------------------------------------------
+4) Handelt es sich bei dieser Interface Deklaration um ein functional Interface?
+
+    @FunctionalInterface
+    public interface TestFunkInterface
+    {
+            static void sageHallo()
+        {
+                System.out.println("Hallo");
+            }
+
+        void sprich(String ausgabe);
+
+        default int addiere(int zahl1, int zahl2)
+        {
+        return zahl1 + zahl2;
+        }
+
+        public abstract int subtrahiere(int zahl1, int zahl2);
+    }

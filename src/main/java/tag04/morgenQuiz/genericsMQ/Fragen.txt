@@ -1,0 +1,39 @@
+1. Welcher der folgenden Typen kann nicht als Typargument in Generics verwendet werden?
+
+    a) Integer
+    b) String
+    c) void
+    d) Double
+
+----------------------------------------------------------------------------------
+2. Welche der folgenden Aussagen ist wahr für Java Generics?
+
+    a) Generics führen zur Verbesserung der Laufzeitleistung
+    b) Generics können mit primitiven Typen verwendet werden
+    c) Generics bieten zur Kompilierzeit Typsicherheit
+    d) Generics erlauben das Hinzufügen von Ausnahmen zu einer Methode
+
+----------------------------------------------------------------------------------
+3. Was passiert, wenn man versucht, ein Integer-Objekt zu einem generischen Container
+hinzuzufügen, der String-Objekte speichert?
+
+    a) Zur Laufzeit wird eine Exception geworfen
+    b) Der Compiler erzeugt einen Fehler
+    c) Das Programm kompiliert und läuft ohne Fehler oder Exceptions
+    d) Der Wert des Integer-Objekts wird in einen String konvertiert und hinzugefügt
+
+----------------------------------------------------------------------------------
+4. Welche der folgenden Methodensignaturen ist korrekt?
+
+    a) public static <E> void printArray(E[] inputArray) {...}
+    b) public static void <E> printArray(E[] inputArray) {...}
+    c) public static <E> void printArray(<E> inputArray) {...}
+    d) public static void printArray(E[] inputArray) {...}
+
+----------------------------------------------------------------------------------
+5. Welche der folgenden Aussagen ist wahr für die Verwendung von Generics in Java?
+
+    a) Generics können nur mit Klassen verwendet werden, nicht mit Interfaces
+    b) Generics können sowohl mit Klassen als auch mit Interfaces verwendet werden
+    c) Generics können nur mit Interfaces verwendet werden, nicht mit Klassen
+    d) Generics können weder mit Klassen noch mit Interfaces verwendet werden

@@ -1,0 +1,38 @@
+1) Welche Aussage zu functional Interfaces ist richtig?
+
+	c) Ein functional Interface kann maximal eine abstrakte Methode, aber beliebig viele default Methoden deklarieren.
+
+----------------------------------------------------------------------------------
+2) Ist diese Aussage korrekt?
+
+	- Functional Interfaces lassen sich, im Gegensatz zu herkömmlichen Interfaces, instanziieren.
+
+
+Antwort: nein, Functional Interfaces können, wie normale Interfaces auch, nicht instanziiert werden.
+
+----------------------------------------------------------------------------------
+3) Functional Interfaces werden auch mit diesem Namen bezeichnet:
+
+	b) SAM Interfaces -> Single Abstract Method Interfaces.
+
+----------------------------------------------------------------------------------
+4) Handelt es sich bei dieser Interface Deklaration um ein functional Interface?
+
+@FunctionalInterface
+public interface TestFunkInterface
+{
+    static void sageHallo() {
+        System.out.println("Hallo");
+    }
+
+    void sprich(String ausgabe);
+
+    default int addiere(int zahl1, int zahl2)
+    {
+        return zahl1 + zahl2;
+    }
+
+    public abstract int subtrahiere(int zahl1, int zahl2);
+}
+
+Antwort: nein, dieses Interface hat zwei abstrakte Methoden.
