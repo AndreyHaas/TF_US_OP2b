@@ -1,30 +1,56 @@
 package tag03.aufgaben.a1;
 
-import java.util.List;
+import java.lang.StackWalker.StackFrame;
 
 public class Main {
+    public static void bildschirm(String... daten) {
+
+        for (String d : daten) {
+            System.out.printf("Schreibe %s auf den " + getMethod() + "...%n", d);
+        }
+        System.out.println();
+    }
+
+    public static void datei(String... daten) {
+
+        for (String d : daten) {
+            System.out.printf("Schreibe %s in die " + getMethod() + "...%n", d);
+        }
+        System.out.println();
+    }
+
+    public static void datenbank(String... daten) {
+
+        for (String d : daten) {
+            System.out.printf("Schreibe %s in die " + getMethod() + "...%n", d);
+        }
+        System.out.println();
+    }
+
+    private static String getMethod() {
+        String methodName = StackWalker.getInstance()
+            .walk(frames -> frames.skip(1).findFirst()
+                .map(StackFrame::getMethodName)
+                .orElse("unknown"));
+
+        if (methodName == null || methodName.isEmpty()) {
+            return methodName;
+        }
+
+        return Character.toUpperCase(methodName.charAt(0)) + methodName.substring(1);
+    }
+
     static void main() {
         String[] daten = {"Hallo", "Welt", "und Lambda in Java"};
 
-        ausgabeKonfigurationen().forEach(konfiguration ->
-            ausgeben(daten, konfiguration.praeposition, konfiguration.ziel)
-        );
-    }
+        Ausgabe[] ausgaben = {
+            Main::bildschirm,
+            Main::datei,
+            Main::datenbank
+        };
 
-    record AusgabeKonfig(String praeposition, String ziel) {}
-
-    private static List<AusgabeKonfig> ausgabeKonfigurationen() {
-        return List.of(
-            new AusgabeKonfig("auf den", "Bildschirm"),
-            new AusgabeKonfig("in die", "Datei"),
-            new AusgabeKonfig("in die", "Datenbank")
-        );
-    }
-
-    private static void ausgeben(String[] daten, String praeposition, String ziel) {
-        for (String datei : daten) {
-            System.out.printf("Schreibe %s %s %s...%n", datei, praeposition, ziel);
+        for (Ausgabe ausgabe : ausgaben) {
+            ausgabe.ausgeben(daten);
         }
-        System.out.println();
     }
 }
